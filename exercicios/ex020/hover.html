@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes</title>
+    <style>
+        div#box {
+            background-color: gray;
+            height: 200px;
+            width: 200px;
+        }
+        div#box:hover {
+            background-color: yellow;
+        }
+        div#mensage {
+            width: 230px;
+        }
+        div#mensage > p {
+            display: none;
+        }
+        div#mensage:hover > p{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pseudo-classes</h1>
+    <div id="box"></div>
+    <div id="mensage">
+        Passe o mouse por cima dessa frase
+        <p>ACHOU!</p>
+    </div>
+</body>
+</html>

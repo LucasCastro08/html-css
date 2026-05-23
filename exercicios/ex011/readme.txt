@@ -1,0 +1,1 @@
+mídias adaptáveis e audio

@@ -1,0 +1,92 @@
+@font-face {
+    font-family: "idroid";
+    src: url(fontes/idroid.otf) format(opentype);
+    
+}
+body {
+    font-family: 'idroid', sans-serif;
+    background-color: #64f98c;
+}
+
+/* CSS Header*/
+header {
+    height: 220px;
+    background-image: linear-gradient(to top, #25A15A, #2CAF2C, #42F271);
+    color: white;
+    box-shadow: 1px 1px 10px black;
+}
+header > h1{
+    text-align: center;
+    text-shadow: 1px 1px 10px black;
+    padding-top: 20px;
+}
+header > p {
+    text-align: center;
+    text-shadow: 1px 1px 10px black;
+}
+header > nav {
+    margin-top: 100px;
+    margin-left: 10px;
+    text-shadow: 1px 1px 10px black;
+}
+header > nav > a {
+    padding-right: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+/*CSS Main*/
+main {
+    height: fit-content;
+    width: 75%;
+    margin: auto;
+    background-color: white;
+    box-shadow: 1px 1px 20px black;
+}
+main > p {
+    font-family: sans-serif;
+    text-align: justify;
+    padding: 0px 10px;
+    text-indent: 20px;
+}
+main > h2 {
+    margin-top: 0%;
+    padding: 20px;
+    font-size: 2em;
+    color: #248f24;
+    text-shadow: 1px 1px 1px black;
+}
+main > h3 {
+    margin-left: 20px;
+    color: #248f24;
+    text-shadow: 0.5px 0.5px 1px black;
+    background-image: linear-gradient(to right, #42F271, white);
+}
+main > img {
+    width: 100%;
+}
+main > div#video {
+    padding: 30px;
+    background-color: #248f24;
+    box-shadow: inset 1px 1px 20px black;
+}
+main > div#video > iframe {
+    padding-left: 18%;
+}
+main > div#lista {
+    background-color: #64f98c;
+    height: 300px;
+    margin: 30px;
+    font-family: sans-serif;
+}
+main > div#lista > aside#cabecalho_lista {
+    background-color: #25A15A;
+    height: 30px;
+    font-family: sans-serif;
+    text-align: center;
+    text-shadow: 1px 1px 1px black;
+    color: white;
+}
+aside#cabecalho_lista p {
+    padding-top: 5px;
+}

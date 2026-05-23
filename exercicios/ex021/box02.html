@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: lightblue;
+        }
+        header {
+            background-color: blue;
+            text-align: center;
+        }
+        nav {
+            background-color: darkblue;
+        }
+        nav > a {
+            color: white;
+            text-decoration: none;
+            padding-right: 20px;
+        }
+        nav > a:hover {
+            text-decoration: underline;
+        }
+        main {
+            height: 400px;
+            background-color: lightgray;
+            padding: 5px;
+            margin-top: 5px;
+        }
+        section {
+            border: 2px solid black;
+        }
+        article > .credito {
+            text-align: right;
+        }
+        article {
+            background-color: white;
+            border: 3px dotted black;
+            padding: 5px;
+            margin: 3px;
+        }
+        article > p {
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Protótipo de Site com Grouping Tags</h1>
+        <nav>
+            <a href="">Link</a>
+            <a href="">Link</a>
+            <a href="">Link</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Notícias</h2>
+        <section>
+            <h3>Esportes</h3>
+            <article>
+                <h4>Notícia 1</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta ipsum enim ab delectus magnam, et vitae dolores reiciendis fuga consequatur quos quo doloribus. Corporis a vero minima eum ab neque?</p>
+                <aside class="credito">Lucas Oliveira Castro</aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        News Prototype
+    </footer>
+</body>
+</html>
