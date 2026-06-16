@@ -5,8 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabela</title>
     <style>
-        tr.line1 {
-            background-color: lightgray;
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table > caption {
+            background-color: lightblue;
+            padding: 10px;
+            font-size: 1.5em;
+        }
+        table > thead {
+            background-color: gray;
         }
         td {
             border: 1px solid black;
@@ -19,26 +27,40 @@
         table {
             border-collapse: collapse;
         }
+        table > tfoot {
+            background-color: lightgray;
+            width: 300px;
+        }
     </style>
 </head>
 <body>
     <h1>Tabela</h1>
     <table>
-        <tr class="line1">
-            <td>A1</td>
-            <td>B1</td>
-            <td>C1</td>
-        </tr>
-        <tr>
-            <td>A2</td>
-            <td>B2</td>
-            <td>C2</td>
-        </tr>
-        <tr>
-            <td>A3</td>
-            <td>B3</td>
-            <td>C3</td>
-        </tr>
+        <caption>Tabela de Teste</caption>
+        <thead id="head">
+            <tr>
+                <td>A1</td>
+                <td>B1</td>
+                <td>C1</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>A2</td>
+                <td>B2</td>
+                <td>C2</td>
+            </tr>
+            <tr>
+                <td>A3</td>
+                <td>B3</td>
+                <td>C3</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Teste</td>
+            </tr>
+        </tfoot>
     </table>
 </body>
 </html>
