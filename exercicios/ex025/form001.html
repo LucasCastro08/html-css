@@ -60,6 +60,44 @@
             <input type="checkbox" name="salsicha" id="isalsicha"> <label for="isalsicha">Salsicha</label>
         </fieldset>
         <div>
+            <fieldset>
+                <legend>Aula 09</legend>
+                <label for="icor">Cor:</label>
+                <input type="color" name="cor" id="icor"><br>
+                <label for="isatistacao">Satisfação:</label>
+                <input type="range" name="satisfacao" id="isatistacao" min="1" max="5" value="5"><br>
+                <label for="ifoto">foto de perfil:</label>
+                <input type="file" name="foto" id="ifoto"><br>
+            </fieldset>
+            <fieldset>
+                <legend>Aula 010</legend>
+                <div>
+                    <label for="iestados">Estados</label>
+                    <select name="Estados" id="iestados">
+                        <option value="" selected> Selecione</option>
+                        <optgroup label="Sudeste">
+                            <option value="SP">São Paulo</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="MG">Minas Gerais</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <div>
+                    <label for="iprofissao">Profissão:</label>
+                    <input type="text" name="profissao" id="iprofissao" list="lstprofissao">
+                    <datalist id="lstprofissao">
+                        <option value="">Caminhoneiro</option>
+                        <option value="">Deselvolvedor</option>
+                        <option value="">Professor</option>
+                    </datalist>
+                </div>
+                <div>
+                    <label for="imsg">Mensagem:</label><br>
+                    <textarea name="msg" id="imsg"></textarea>
+                </div>
+            </fieldset>
+        </div>
+        <div>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
         </div>
