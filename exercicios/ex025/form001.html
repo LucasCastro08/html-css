@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        form div {
+            padding: 2px;
+        }
+
+        form fieldset {
+            max-width: fit-content;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de Formulário</h1>
+    <form action="formulario.php" method="post">
+        <fieldset>
+            <legend>Formulário</legend>
+            <div>
+                <label for="inome">Nome:</label>
+                <input type="text" name="nome" id="inome" required placeholder="Lucas...">
+            </div>
+            <div>
+                <label for="isenha">Senha:</label>
+                <input type="password" name="senha" id="isenha" required minlength="8" maxlength="20" size="20">
+            </div>
+            <div>
+                <label for="idata">Data:</label>
+                <input type="date" name="Data" id="idata" required>
+            </div>
+            <div>
+                <label for="imes">Mês:</label>
+                <input type="month" name="mes" id="imes">
+            </div>
+            <div>
+                <label for="itempo">Tempo:</label>
+                <input type="time" name="tempo" id="itempo">
+            </div>
+            <div>
+                <label for="inum">Nota:</label>
+                <input type="number" name="num" id="inum" step="0.1" minlength="0" maxlength="10" placeholder="0 a 10">
+            </div>
+            <div>
+                <label for="iemail">Email:</label>
+                <input type="email" name="email" id="iemail" >
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Radio</legend>
+            <input type="radio" name="sexo" id="smas"> <label for="smas">Masculino</label>
+            <input type="radio" name="sexo" id="sfem"> <label for="sfem">Feminino</label>
+        </fieldset>
+        <fieldset>
+            <legend>Checkbox</legend>
+            <input type="checkbox" name="linguiça" id="ilinguiça"> <label for="ilinguiça">Linguiça</label>
+            <input type="checkbox" name="salsicha" id="isalsicha"> <label for="isalsicha">Salsicha</label>
+        </fieldset>
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+    </form>
+</body>
+</html>
