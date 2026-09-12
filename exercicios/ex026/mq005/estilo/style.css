@@ -23,6 +23,19 @@ header > h1 {
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.361);
 }
 
+i#burguer {
+    display: block;
+    background-color: gray;
+    color: white;
+    padding: 11px;
+    text-align: center;
+}
+i#burguer:hover {
+    cursor: pointer;
+}
+header > menu {
+    display: none;
+}
 header > menu {
     background-color: gray;
 
@@ -31,7 +44,7 @@ header > menu > ul {
     list-style: none;
 }
 header > menu > ul > li {
-    padding: 15px;
+    padding: 12px;
     text-align: center;
     border-top: 2px solid darkgray;
 }
